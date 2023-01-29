@@ -65,8 +65,7 @@ def calculateCosts(employeeNames, employeeIDs, employeeHours, employeePaycodes, 
             takeHomeAmount = paycodes[str(employeePaycodes[a])] * 40
 
         elif int(employeeHours[a]) <= 40:
-            takeHomeAmount = paycodes[str(employeePaycodes[a])] * int(
-                employeeHours[a])
+            takeHomeAmount = paycodes[str(employeePaycodes[a])] * int(employeeHours[a])
 
         takeHomeAmount += overTime
         tax = round((takeHomeAmount * taxRate)* 100) / 100
